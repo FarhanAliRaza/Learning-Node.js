@@ -16,7 +16,7 @@ app.use(
 
 // s8U5d4jaejV##DY
 // const dburi = "mongodb://farhan:s8U5d4jaejV##DY@cluster0.lg3je.mongodb.net/test";
-const mongoAtlasUri = "mongodb+srv://test:test@learning.pfqmj.mongodb.net/test";
+const mongoAtlasUri = process.env.URI;
 var Message = mongoose.model("Message", {
   usr: String,
   msg: String,
